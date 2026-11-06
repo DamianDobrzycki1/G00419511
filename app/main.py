@@ -2,7 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException, status, responses
 from app.database import engine, get_db
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
-from models import Base, UserDB
+from app.models import Base, UserDB
 from sqlalchemy import select
 from app.schemas import UserCreate, UserRead
 
